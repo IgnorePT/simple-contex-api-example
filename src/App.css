@@ -1,0 +1,126 @@
+/* Header */
+.header {
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	background-color: #000;
+	color: #fff;
+}
+
+.header .user {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header .user .image {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #f2f2f2;
+}
+
+.header .user .name {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+/* Footer */
+footer {
+	padding: 1.2rem;
+	text-align: center;
+}
+
+/* Main */
+.main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100%;
+	height: calc(100vh - 50px);
+}
+
+.welcome-message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(https://images.unsplash.com/photo-1690473252779-24d7e8f03e2d?q=80&w=1827&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-size: cover;
+	position: relative;
+}
+
+.welcome-message:before {
+	content: "";
+	background-color: #000;
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.welcome-message .text {
+	font-size: 2rem;
+	color: #fff;
+	z-index: 10;
+}
+
+.welcome-message .text h1 {
+	margin: 0;
+	font-size: 4rem;
+	z-index: 2;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding: 3rem 2rem;
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+.content h2 {
+	font-size: 2rem;
+}
+
+.profile-card {
+	display: block;
+	width: 100%;
+}
+
+.profile-card .profile-form .form-group {
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.profile-card .profile-form {
+	display: block;
+}
+
+.profile-card .profile-form label {
+	font-size: 1.2rem;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.profile-card .profile-form input {
+	display: block;
+	width: 100%;
+	padding: 0.6rem 0.6rem;
+}
+
+.profile-card .profile-form button {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 50px;
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+}
