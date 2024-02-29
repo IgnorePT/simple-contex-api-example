@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import PackageIcon from "../icons/PackageIcon";
+import { UserContext } from "../../contexts/UserContext";
 
 export default function Header() {
+	const userContext = useContext(UserContext);
 	return (
 		<div className="header">
 			<div>
@@ -9,7 +12,7 @@ export default function Header() {
 
 			<div className="user">
 				<span className="image"></span>
-				<span className="name">Nelson</span>
+				<span className="name">{userContext.user}</span>
 			</div>
 		</div>
 	);
