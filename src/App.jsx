@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import { useState } from "react";
@@ -16,13 +16,15 @@ function App() {
 		setUser(name);
 	};
 
+	const userLenght = user.length;
+
 	return (
 		<>
 			<UserContext.Provider
 				value={{
 					user: user,
 					updateUserFn: updateUser,
-					cenas: "cenasssss",
+					userLenght: userLenght,
 				}}
 			>
 				<Header />
